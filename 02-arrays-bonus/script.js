@@ -29,6 +29,7 @@ for (let i = 0; i < teachers.length; i++ ) {
 }
  console.log(longName)
 // 3. Rimuovi 'Ed' dall'array teachers
+/*
 const removeEd =[]
 for (let i =0; i < teachers.length; i++) {
   if (teachers[i] != "Ed") {
@@ -37,8 +38,15 @@ removeEd.push(teachers[i]);
 }
 console.log(removeEd);
 
+*/
 
-let ed = teachers.indexOf("Ed")
+const ed = teachers.indexOf("Ed")
+
 console.log(ed);
+
+teachers.splice(ed, 1) 
+console.log(teachers);
+
+
 
 
